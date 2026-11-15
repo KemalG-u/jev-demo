@@ -1,10 +1,10 @@
-# Jev Karar Laboratuvarı — yerel demo kaynak adayı
+# Jev Karar Laboratuvarı — demo kaynak adayı
 
 Gerçek `jev-vercel-demo` uygulamasının Next.js arayüzü, public route'u ve seçilmiş demo mantığıdır; yeniden tasarlanmış sahte bir ürün değildir. **Jev modeli veya başka bir sağlayıcı çalışmaz.** Sonuçlar sabit örnek kuralların çıktısıdır; yüzdeler ölçülmüş olasılık, kararlar işlem yetkisi değildir. Yalnız sentetik veri girin. Kişisel veri, gerçek kurum bilgisi veya gizli bilgi girmeyin. Korumalı entegrasyon ve API anahtarları yoktur.
 
-**Yerel testler geçti; yayın onayı değildir.** Windows adayında typecheck, domain testleri, üretim build'i ve yerel sunucuyla sentetik API testleri geçti. Tarayıcıda görsel kabul, hak/lisans incelemesinin kalanı ve bağımsız inceleme bekliyor. `KOKEN-VE-KAPSAM.md` ve `THIRD-PARTY.md` eksikleri açıklar.
+**Demo kaynak deposu herkese açıktır; yerel testler genel bir güvence değildir.** Windows adayında typecheck, domain testleri, üretim build'i ve yerel sunucuyla sentetik API testleri geçti. Tarayıcıda görsel kabul ve hak/lisans incelemesinin kalanı bekliyor. Bu adayın sonraki değişiklikleri için Astra bağımsız incelemesi bekleniyor. `KOKEN-VE-KAPSAM.md` ve `THIRD-PARTY.md` sınırları açıklar.
 
-## Yerelde çalıştırma — kapı açıldıktan sonra
+## Yerelde çalıştırma
 
 Node.js 22.18 veya üstü gerekir (testler Node'un yerleşik TypeScript desteğini kullanır; Node 24 önerilir). Aday klasöründe:
 

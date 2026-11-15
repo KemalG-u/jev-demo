@@ -1,4 +1,4 @@
-# Köken, değişiklikler ve yayın engeli
+# Köken, değişiklikler ve kapsam
 
 Kaynak: `D:/antigravity/jev-vercel-demo`, Git HEAD `48f4b6e2067a0eee8703fdb1de4aee019663587a`. İlgili seçili kaynak dosyaları için çalışma ağacı değişikliği görülmedi; başka kaynak dosyaları değişmişti. Geçmişte Kemal adına commit bulunması tek başına telif zincirini kanıtlamaz.
 
@@ -14,8 +14,8 @@ Kaynak: `D:/antigravity/jev-vercel-demo`, Git HEAD `48f4b6e2067a0eee8703fdb1de4a
 
 Entegrasyon route'ları, provider, auth, MCP, fixture kataloğu, ortam dosyaları, node_modules ve anahtarlar kopyalanmadı. Lisans envanteri ve açık eksikler `THIRD-PARTY.md` içindedir.
 
-## Yayın kapıları
+## Yayın durumu ve kalan kontroller
 
-Uygulama kaynak yayını için hak zinciri ve lisans seçimi, ayrıca bağımlılıkların özellikle ikili biçimde dağıtımı için ayrı hak ve yükümlülük incelemesi, üçüncü taraf lisans/bildirim incelemesinin kalanları, tarayıcıda görsel kontrol, Astra bağımsız incelemesi ve dış yayın onayı bekleniyor. Sentetik testler ve üretim build'i Windows'ta başarılı oldu; gerçek sağlayıcı veya ücretli API çalıştırılmadı. Bunlar giderilmeden dışarı yayınlamayın.
+Demo kaynak deposu herkese açıktır. Uygulama kodunun hak zinciri ve lisans seçimi, bağımlılıkların özellikle ikili biçimde dağıtımı için ayrı hak ve yükümlülük incelemesi, üçüncü taraf lisans/bildirim incelemesinin kalanları ve tarayıcıda görsel kontrol bekliyor. Bu adayın sonraki değişiklikleri için Astra bağımsız incelemesi bekleniyor. Sentetik testler ve üretim build'i Windows'ta başarılı oldu; gerçek sağlayıcı veya ücretli API çalıştırılmadı.
 
 KemalG-u kamu hesabı için MIT lisansı ancak uygulama kodunun tamamı üzerinde gerekli haklar kesinleşirse eklenebilir; Git yazar kaydı buna yeterli kanıt değildir. Üçüncü taraf kodu kendi lisanslarına tabidir.
