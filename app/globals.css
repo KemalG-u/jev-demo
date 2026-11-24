@@ -1,0 +1,2 @@
+:root { --paper:#f4f0e8; --ink:#24221e; --orange:#e65c2f; --line:#d5cec1; --muted:#756f66; }
+* { box-sizing:border-box; } body { margin:0; background:var(--paper); color:var(--ink); font-family:'DM Sans',sans-serif; } button,textarea { font:inherit; } button:focus-visible,textarea:focus-visible { outline:3px solid var(--orange); outline-offset:3px; }

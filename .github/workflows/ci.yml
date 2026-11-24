@@ -1,0 +1,38 @@
+# CI: type-check, test and build on every push and pull request.
+# Least privilege: top-level read-only token; third-party actions pinned to full commit SHAs (version in the comment).
+# The lock file was derived and verified on Windows x64, so CI runs on windows-latest.
+name: CI
+
+on:
+  workflow_dispatch:
+  push:
+    branches: ["main"]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: "24"
+      - name: Install
+        run: npm ci --ignore-scripts --no-audit --no-fund
+      - name: Typecheck
+        run: npm run typecheck
+      - name: Domain tests
+        run: npm run test:domain
+      - name: Build
+        run: npm run build
+      - name: API tests
+        shell: bash
+        run: |
+          npm start &
+          for i in $(seq 1 30); do curl -sf http://127.0.0.1:3000/ >/dev/null && break; sleep 1; done
+          npm run test:api
